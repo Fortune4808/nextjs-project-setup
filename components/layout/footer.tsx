@@ -7,7 +7,7 @@ const Footer = () => {
     return (
         <footer className="w-full flex flex-col bg-black/80">
             <div className={`w-full min-h-[400px] text-[var(--white-color)] ${styles.container} ${styles.footerBg}`}>
-                <div className={`${styles.child}`}>
+                <div className={`${styles.child} py-[30px]`}>
                     <div className="flex flex-wrap gap-10">
                         <div className={`${styles.linkContainer}`}>
                             <Link href="">

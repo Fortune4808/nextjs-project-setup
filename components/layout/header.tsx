@@ -6,12 +6,13 @@ import Image from "next/image";
 import Button from "@/components/ui/button";
 import Link from "next/link";
 import Navbar from "./navbar";
+import border from "@/styles/components/button.module.css";
 
 const Header = () => {
     return (
         <header className="w-full flex flex-col fixed z-10">
             <div className="w-full min-h-[45px] bg-[var(--primary-color)] flex justify-center items-center">
-                <div className={`${styles.container} text-[var(--white-color)]`}>
+                <div className={`${styles.container} text-[var(--white-color)] text-nowrap`}>
                     <div className={styles.flex}>
                         <div className="font-bold">Follow Us:</div>
                         <div className={styles.socialsIcon} title="Youtube"><FaYoutube /></div>
@@ -45,14 +46,12 @@ const Header = () => {
                             />
                         </div>
                     </Link>
-
                     <Navbar />
-
                     <Link href="">
                         <Button
                             label="PORTAL" icon={<BsFillPencilFill />}
                             title="Apply for New Project"
-                            className="bg-[var(--primary-color)] text-white"
+                            className={`bg-[var(--primary-color)] text-[var(--white-color)] ${border.buttonBorder}`}
                         />
                     </Link>
                 </div>

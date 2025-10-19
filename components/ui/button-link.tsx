@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Button from "./button"
 import { BsFillPencilFill } from "react-icons/bs";
+import border from "@/styles/components/button.module.css";
 
 const ButtonLink = () => {
     return (
@@ -11,7 +12,7 @@ const ButtonLink = () => {
                         label="PORTAL"
                         icon={<BsFillPencilFill />}
                         title="Apply for New Project"
-                        className="bg-[var(--primary-color)] "
+                        className={`bg-[var(--primary-color)] ${border.buttonBorder}`}
                     />
                 </Link>
                 <Link href="">
@@ -19,14 +20,14 @@ const ButtonLink = () => {
                         label="PORTAL"
                         icon={<BsFillPencilFill />}
                         title="Apply for New Project"
-                        className="bg-[var(--body-bg-color)] text-[var(--text-color)]"
+                        className={`bg-[var(--white-color)] text-[var(--text-color)] ${border.buttonBorder}`}
                     />
                 </Link>
                 <Link href="">
                     <Button label="PORTAL"
                         icon={<BsFillPencilFill />}
                         title="Apply for New Project"
-                        className="bg-[var(--primary-color)]"
+                        className={`bg-[var(--primary-color)] ${border.buttonBorder}`}
                     />
                 </Link>
             </div>

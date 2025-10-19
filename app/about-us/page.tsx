@@ -1,47 +1,42 @@
-import Header from "@/components/layout/header";
-import Footer from "@/components/layout/footer";
 import styles from "@/styles/main.module.css";
 import ButtonLink from "@/components/ui/button-link";
 import Link from "next/link";
 import { IoMdArrowDropright } from "react-icons/io";
+import Layout from "@/components/layout/layout";
 
 const AboutUs = () => {
     return (
         <>
-            <Header />
-            <div className="absolute w-full h-full top-[115px]">
-                <main>
-                    <section className={`w-full min-h-[400px] text-[var(--white-color)] ${styles.titleBg}`}>
-                        <div className="w-[90%] max-w-[1200px] flex">
-                            <div className={`w-[500px] flex flex-col gap-5 ${styles.textShadow}`}>
-                                <div className="flex gap-3 text-nowrap font-bold">
-                                    <Link href="/"
-                                        className="flex items-center hover:text-[var(--secondary-color)]"
-                                        title="Home">Home <IoMdArrowDropright className="text-2xl" />
-                                    </Link>
+            <Layout>
+                <section className={`w-full min-h-[400px] text-[var(--white-color)] ${styles.titleBg}`}>
+                    <div className="w-[90%] max-w-[1200px] flex">
+                        <div className={`w-[500px] flex flex-col gap-5 ${styles.textShadow}`}>
+                            <div className="flex gap-3 text-nowrap font-bold">
+                                <Link href="/"
+                                    className="flex items-center hover:text-[var(--secondary-color)]"
+                                    title="Home">Home <IoMdArrowDropright className="text-2xl" />
+                                </Link>
 
-                                    <Link href="/about-us"
-                                        className="hover:text-[var(--secondary-color)]"
-                                        title="About Us">About Us
-                                    </Link>
-                                </div>
-
-                                <h1 className="font-extrabold text-6xl text-nowrap title">
-                                    About Us
-                                </h1>
-
-                                <p>
-                                    Welcome to the new project folder structure in Next.js.
-                                    A modern, organized setup designed to make your development process cleaner,
-                                    faster, and more maintainable.
-                                </p>
-                                <ButtonLink />
+                                <Link href="/about-us"
+                                    className="hover:text-[var(--secondary-color)]"
+                                    title="About Us">About Us
+                                </Link>
                             </div>
+
+                            <h1 className="font-extrabold text-6xl text-nowrap title">
+                                About Us
+                            </h1>
+
+                            <p>
+                                Welcome to the new project folder structure in Next.js.
+                                A modern, organized setup designed to make your development process cleaner,
+                                faster, and more maintainable.
+                            </p>
+                            <ButtonLink />
                         </div>
-                    </section>
-                </main>
-                <Footer />
-            </div>
+                    </div>
+                </section>
+            </Layout>
         </>
     )
 }
