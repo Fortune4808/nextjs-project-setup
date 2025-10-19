@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import 'animate.css';
 
 :root {
     --body-bg-color: #f8f8f8;

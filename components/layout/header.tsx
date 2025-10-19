@@ -10,7 +10,7 @@ import border from "@/styles/components/button.module.css";
 
 const Header = () => {
     return (
-        <header className="w-full flex flex-col fixed z-10">
+        <header className="w-full flex flex-col fixed z-10 animate__animated animate__fadeInDown">
             <div className="w-full min-h-[45px] bg-[var(--primary-color)] flex justify-center items-center">
                 <div className={`${styles.container} text-[var(--white-color)] text-nowrap`}>
                     <div className={styles.flex}>

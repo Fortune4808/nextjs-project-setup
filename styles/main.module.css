@@ -1,8 +1,16 @@
-.slideSection {
+.slideBg {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/all-images/bg-pix/slide-bg.jpg') center/cover no-repeat;
+}
+
+.section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sectionIn{
+    width: 90%;
+    max-width: 1200px;
 }
 
 .textShadow {
@@ -15,5 +23,3 @@
     justify-content: center;
     align-items: center;
 }
-
-

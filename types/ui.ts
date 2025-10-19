@@ -11,3 +11,9 @@ export type ButtonProps = {
 export interface LayoutProps {
     children: React.ReactNode;
 }
+
+export type AnimatedWrapperProps = {
+    children: React.ReactNode;
+    animation?: string;
+    delay?: number;
+};
