@@ -11,18 +11,20 @@ export default function Home() {
             <Layout>
                 <section className={`w-full h-[calc(100vh-115px)] text-[var(--white-color)] ${styles.section} ${styles.slideBg}`}>
                     <div className={`${styles.sectionIn} flex`}>
-                        <AnimatedWrapper>
-                            <div className={`w-[500px] flex flex-col gap-5 ${styles.textShadow}`}>
-                                <div className="flex items-center bg-white/30 rounded-full gap-3 text-nowrap">
+                        <div className={`w-[500px] flex flex-col gap-5 ${styles.textShadow}`}>
+                            <AnimatedWrapper>
+                                <div className="flex items-center bg-white/30 rounded-full gap-3">
                                     <div className="p-[10px] rounded-full bg-[var(--secondary-color)]"><FaBell /></div>
-                                    <div className="font-bold">WELCOME TO NEW PROJECT FOLDER SETUP IN NEXTJS</div>
+                                    <div className="font-bold text-[clamp(10px,1vw,15px)]">WELCOME TO NEW PROJECT FOLDER SETUP IN NEXTJS</div>
                                 </div>
-
-                                <h1 className="font-extrabold text-6xl text-nowrap title">
+                            </AnimatedWrapper>
+                            <AnimatedWrapper>
+                                <h1 className="font-extrabold text-nowrap title">
                                     I'm a professional <br />
                                     #<span className="text-[var(--secondary-color)]"><AutoTyping /></span>
                                 </h1>
-
+                            </AnimatedWrapper>
+                            <AnimatedWrapper>
                                 <p>
                                     I'm a professional Full-Stack Developer with a strong focus on building high-performance,
                                     user-centric web applications. I specialize in both front-end and back-end development,
@@ -30,18 +32,18 @@ export default function Home() {
                                     understanding of modern frameworks, clean architecture, and collaborative workflows,
                                     I bridge the gap between design and functionality to deliver complete, end-to-end web experiences.
                                 </p>
-                                <ButtonLink />
-                            </div>
-                        </AnimatedWrapper>
+                            </AnimatedWrapper>
+                            <ButtonLink />
+                        </div>
                     </div>
                 </section>
 
                 <section className={`w-full min-h-[300px] ${styles.section}`}>
                     <div className={`${styles.sectionIn}`}>
-                       
+
                     </div>
                 </section>
-            </Layout>
+            </Layout >
         </>
     );
 }

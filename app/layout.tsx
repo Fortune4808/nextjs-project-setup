@@ -22,6 +22,14 @@ export const metadata: Metadata = {
         template: "%s | My Portfolio",
     },
     description: "Building modern web experiences with Next.js and TypeScript.",
+    // viewport: {
+    //     width: "device-width",
+    //     initialScale: 1,
+    // },
+    robots: {
+        index: true,
+        follow: true,
+    },
     openGraph: {
         title: "My Portfolio | Full-Stack Developer",
         description: "Explore my work, skills, and projects.",
@@ -45,11 +53,6 @@ export const metadata: Metadata = {
         creator: "@yourhandle",
         images: ["/og-image.png"],
     },
-    // viewport: {
-    //     width: "device-width",
-    //     initialScale: 1.0,
-    //     maximumScale: 1.0,
-    // },
 };
 
 export default function RootLayout({

@@ -7,6 +7,7 @@ export default function AOSProvider({ children }: { children: React.ReactNode })
     useEffect(() => {
         AOS.init({
             duration: 1200,
+            easing: "ease-in-out"
         });
     }, []);
 
