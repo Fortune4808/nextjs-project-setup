@@ -17,3 +17,12 @@ export type AnimatedWrapperProps = {
     animation?: string;
     delay?: number;
 };
+
+export interface FloatingInputProps {
+    label: string;
+    type?: string;
+    value?: string;
+    className?: string;
+    disabled?: boolean;
+    onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}

@@ -13,7 +13,7 @@ const Footer = () => {
                         <div className={`${styles.linkContainer}`}>
                             <AnimatedWrapper animation='zoom-in'>
                                 <Link href="">
-                                    <div className="max-w-[200px] h-[60px] overflow-hidden flex items-center bg-[var(--white-color)]/80 rounded-[5px]">
+                                    <div className="max-w-[200px] h-[60px] overflow-hidden flex items-center bg-[var(--white-color)]/80 rounded-[5px] p-1">
                                         <Image
                                             src="/all-images/image-pix/logo.png"
                                             width={200} height={60}

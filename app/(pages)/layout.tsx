@@ -1,8 +1,9 @@
-import Header from "./header";
-import Footer from "./footer";
+import Header from "@/components/layout/header";
+import Footer from "@/components/layout/footer";
+import BackToTop from "@/components/layout/back-to-top";
 import { LayoutProps } from "@/types/ui";
 
-const Layout = ({ children }: LayoutProps) => {
+const PageLayout = ({ children }: LayoutProps) => {
     return (
         <>
             <Header />
@@ -10,8 +11,9 @@ const Layout = ({ children }: LayoutProps) => {
                 <main>{children}</main>
                 <Footer />
             </div>
+            <BackToTop/>
         </>
     );
 }
 
-export default Layout 
+export default PageLayout 
