@@ -3,7 +3,7 @@ import { LayoutProps } from "@/types/ui";
 import Image from "next/image";
 import SideNav from "@/components/layout/dashboard/sidenav";
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children, formmodal }: LayoutProps) => {
     return (
         <>
             <div className="relative w-full h-screen">
@@ -21,6 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
                             {children}
                         </div>
                     </main>
+                     {formmodal}
                 </div>
             </div>
         </>

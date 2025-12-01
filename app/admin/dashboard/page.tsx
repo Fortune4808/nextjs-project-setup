@@ -32,8 +32,16 @@ const Dashboard = () => {
                 <div className="w-[500px] bg-white/90 flex-grow-10 rounded">
                     <ChartWrapper />
                 </div>
-                <div className="w-[350px] min-h-[400px] bg-white/90 flex-grow rounded">
-                    
+                <div className="w-[300px] min-h-[350px] bg-white/90 flex-grow rounded flex flex-wrap gap-2 p-[12px]">
+                    <div className="w-[300px] min-h-[100px] bg-white flex-grow shadow rounded">
+
+                    </div>
+                    <div className="w-[300px] min-h-[100px] bg-white flex-grow shadow rounded">
+
+                    </div>
+                    <div className="w-[300px] min-h-[100px] bg-white flex-grow shadow rounded">
+
+                    </div>
                 </div>
             </div>
         </div>

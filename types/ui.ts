@@ -10,6 +10,7 @@ export type ButtonProps = {
 
 export interface LayoutProps {
     children: React.ReactNode;
+    formmodal?: React.ReactNode;
 }
 
 export type AnimatedWrapperProps = {
