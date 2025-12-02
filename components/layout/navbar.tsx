@@ -16,7 +16,7 @@ const Navbar = () => {
         <nav className="w-full px-10">
             <ul className="flex">
                 {links.map((link) => (
-                    <li key={link.href} className="group">
+                    <li key={link.href}>
                         <Link
                             href={link.href}
                             title={link.label}
