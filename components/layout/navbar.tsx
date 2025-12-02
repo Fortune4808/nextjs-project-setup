@@ -6,7 +6,6 @@ const Navbar = () => {
     const pathname = usePathname()
 
     const links = [
-        { href: '/', label: 'Home' },
         { href: '/about-us', label: 'About Us' },
         { href: '/our-services', label: 'Our Services' },
         { href: '/blog', label: 'Blog' },
@@ -14,21 +13,20 @@ const Navbar = () => {
     ]
 
     return (
-        <nav className="w-full">
-            <ul>
-                <li>
-                    {links.map((link) => (
+        <nav className="w-full px-10">
+            <ul className="flex">
+                {links.map((link) => (
+                    <li key={link.href} className="group">
                         <Link
-                            key={link.href}
                             href={link.href}
                             title={link.label}
-                            className={`px-8 py-4 text-nowrap hover:text-[var(--secondary-color)] hover:rounded-[5px] ${pathname === link.href ? 'text-[var(--secondary-color)] rounded-[5px]' : ''}`}
-                        >
-                            {link.label}
+                            className={`px-5 py-4 text-nowrap hover:text-[var(--secondary-color)] text-sm hover:rounded-[5px] ${pathname === link.href ? 'text-[var(--secondary-color)] rounded-[5px]' : ''}`}
+                        > {link.label}
                         </Link>
-                    ))}
-                </li>
+                    </li>
+                ))}
             </ul>
+
         </nav>
     )
 }
